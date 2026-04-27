@@ -1,11 +1,13 @@
-#include <stdio>
+#include <stdio.h>
 int main(void)
 {
  int Fahrenheit;
- int Celsius;
  printf("Enter Fahrenheit: ");
+ scanf("%d", &Fahrenheit);
 
- int Celsius = Fahrenheit - 32 / 1.8;
+ int Celsius = (Fahrenheit-32)/1.8;
+ printf("%dF° = %dC° \n",Fahrenheit,Celsius);
+ //-40°F = -40C°
 }
 
 
