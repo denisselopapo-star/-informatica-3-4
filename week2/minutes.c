@@ -15,6 +15,13 @@ int main(void)
     int endhour=time+hour;
     int endmin=startmin+min;
 
+     if(endmin >=60){//this makes the limit of an hour last 60 minutes
+        endhour = endhour+ (endmin/60);//update value of endhour variable
+        endmin= endmin %60;
+     }
+
     printf("your movie will last:%dhr and %dmin \n",hour,min);
-    printf("End time: %d:%d\n", endhour, endmin);
+    printf("End time: %d:%02d \n", endhour, endmin);
+
+
 }
