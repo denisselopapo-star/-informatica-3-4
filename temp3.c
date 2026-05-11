@@ -12,15 +12,13 @@ int main(void){
     printf("2.farenheit to celcius\n");
     scanf("%d", &user_response);
 
-    if (users_response==1){
+    if (user_response == 1){
         c_to_f();
-    }else if (users_response==2){
+    }else if (user_response == 2){
         f_to_c();
-    
+    }else{
+        printf("invalid option\n");
     }
-
-
-
 
 }
 //2.definition
@@ -39,5 +37,5 @@ void f_to_c(void){
  scanf("%d", &f);
 
  int c = (f-32)/1.8;
- printf("%df° = %dc° \n",f,Celcius);
+ printf("%df° = %dc° \n",f,c);
 }
