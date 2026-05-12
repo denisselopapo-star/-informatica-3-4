@@ -16,23 +16,26 @@ int main(void){
     printf("2.addition\n");
     scanf("%d", &user_response);
 
-    if (user_response == 1){
-        c_to_f();
+    if (user_response == ){
+        n1_mul_n2();
     }else if (user_response == 2){
-        f_to_c();
+        n1_div_n2();
+    }else{
+        n1_sub_n2();
+    }else{
+        add();
     }else{
         printf("invalid option\n");
-    }
 
 }
 
 void mul(void){
-    int m;
+    int mult;
  printf("Enter operation: ");
- scanf("%d", &c);
+ scanf("%d", &mul);
 
- int m= (m*m)+32;
- printf("%dc° = %df° \n",c,f);
+ int mul= (%d*%d);
+ printf("%d = %d \n",mult,mul);
 }
 
 void div(void){
