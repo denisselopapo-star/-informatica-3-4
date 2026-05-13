@@ -1,64 +1,65 @@
 #include <stdio.h>
 //prototype
-void mul(void);
-void div(void);
-void sub(void);
-void add(void);
+void n1_mul_n2(void);
+void n1_div_n2(void);
+void n1_sub_n2(void);
+void n1_add_n2(void);
 
 int main(void){
 
-    int user_operation;
+    int user_response;
 
     printf("select an option:\n");
     printf("1.multiplication\n");
     printf("2.divition\n");
     printf("3.subbtrection\n");
-    printf("2.addition\n");
+    printf("4.addition\n");
     scanf("%d", &user_response);
 
-    if (user_response == ){
+    if (user_response==1){
         n1_mul_n2();
-    }else if (user_response == 2){
+    }else if (user_response==2){
         n1_div_n2();
-    }else{
+    }else if (user_response==3){
         n1_sub_n2();
-    }else{
-        add();
-    }else{
+    }else if (user_response==4){
+        n1_add_n2();
+    }else {
         printf("invalid option\n");
 
 }
 
-void mul(void){
-    int mult;
+void n1_sub_n2(void){
+    float num1;
+    float num2;
  printf("Enter operation: ");
- scanf("%d", &mul);
+ scanf("%f-%f", &num1,&num2);
+ float num3=&num1+&num2;
+ printf("%.2f-%.2f=%.2f",num1,num2,num3);
 
- int mul= (%d*%d);
- printf("%d = %d \n",mult,mul);
 }
+void n1_mul_n2(void){
+    float num1;
+    float num2;
+ printf("Enter operation: ");
+ scanf("%f*%f", &num1,&num2);
+ float num3=&num1+&num2;
+ printf("%.2f*%.2f=%.2f",num1,num2,num3);
 
-void div(void){
-    int f;
- printf("Enter fahrenheit: ");
- scanf("%d", &f);
-
- int c = (f-32)/1.8;
- printf("%df° = %dc° \n",f,c);
 }
-void sub(void){
-    int c;
- printf("Enter c: ");
- scanf("%d", &c);
-
- int f = (c*1.8)+32;
- printf("%dc° = %df° \n",c,f);
+void n1_add_n2(void){
+    float num1;
+    float num2;
+ printf("Enter operation: ");
+ scanf("%f+%f", &num1,&num2);
+ float num3=&num1+&num2;
+ printf("%.2f+%.2f=%.2f",num1,num2,num3);
 }
-void add(void){
-    int c;
- printf("Enter c: ");
- scanf("%d", &c);
-
- int f = (c*1.8)+32;
- printf("%dc° = %df° \n",c,f);
+void n1_div_n2(void){
+    float num1;
+    float num2;
+ printf("Enter operation: ");
+ scanf("%f/%f", &num1,&num2);
+ float num3=&num1+&num2;
+ printf("%.2f/%.2f=%.2f",num1,num2,num3);
 }
